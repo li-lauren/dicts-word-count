@@ -20,3 +20,6 @@ print(cnt)
 for key, value in dict_words.items():
     print(key, value)
 
+# sort output by words alphabetically
+print(sorted(dict_words.items()))
+
