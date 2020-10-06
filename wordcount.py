@@ -17,7 +17,7 @@ for word in text:
     cnt[word] += 1
 print(cnt)
 
-# for key, value in dict_words.items():
+for key, value in dict_words.items():
     print(key, value)
 
 # sort output by words alphabetically
