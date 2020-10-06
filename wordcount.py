@@ -17,9 +17,14 @@ for word in text:
     cnt[word] += 1
 print(cnt)
 
-for key, value in dict_words.items():
-    print(key, value)
+# for key, value in dict_words.items():
+#     print(key, value)
 
 # sort output by words alphabetically
-print(sorted(dict_words.items()))
+for key, value in sorted(dict_words.items()):
+    print(key, value)
+
+# sort output by word count
+for key, value in sorted(dict_words.items(), key=lambda item: item[1]):
+    print(key, value)
 
