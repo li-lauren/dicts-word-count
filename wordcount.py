@@ -1,7 +1,7 @@
 # put your code here.
-
-text = open('test.txt').read()
-text = text.split()
+import re
+text = open('test.txt').read().lower()
+text = re.split('\.| |\n|,|\?', text)
 
 dict_words = {}
 
